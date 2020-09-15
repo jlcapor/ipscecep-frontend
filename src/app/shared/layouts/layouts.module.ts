@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ContentTopComponent } from './content-top/content-top.component';
 import { MenuComponent } from './menu/menu.component';
 import { PagesTopComponent } from './pages-top/pages-top.component';
-import { RightConfigComponent } from './right-config/right-config.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -13,14 +13,12 @@ import { SidebarComponent } from './sidebar/sidebar.component';
      ContentTopComponent,
      MenuComponent, 
      PagesTopComponent, 
-     RightConfigComponent, 
-     SidebarComponent
+     SidebarComponent, NavbarComponent
     ],
   exports:[
     ContentTopComponent,
     MenuComponent, 
     PagesTopComponent, 
-    RightConfigComponent, 
     SidebarComponent
   ],
   imports: [
