@@ -4,9 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module'
-import {UserModule} from './pages/user/user.module'
 import {LayoutsModule} from './shared/layouts/layouts.module';
-
+import {ComponentsModule} from './components/components.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +14,7 @@ import {LayoutsModule} from './shared/layouts/layouts.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    UserModule,
+    ComponentsModule,
     LayoutsModule
   ],
   providers: [],
