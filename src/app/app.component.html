@@ -1,17 +1,14 @@
 <div class="pages-wrap">
-    <pages-top></pages-top>
+    <app-pages-top></app-pages-top>
     <div class="pages-body">
-        <sidebar></sidebar>
+        <app-sidebar></app-sidebar>
 
         <div class="pages-content">
-            <content-top></content-top>
+            <app-content-top></app-content-top>
             <router-outlet></router-outlet>
-            <notification></notification>
+
         </div>
 
-        <right-config></right-config>
+        <app-right-config></app-right-config>
     </div>
 </div>
-<loading [loading]="false"></loading>
-
-<router-outlet></router-outlet>

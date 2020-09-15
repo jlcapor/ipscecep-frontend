@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {LayoutModule} from './layout/layout.module'
-import {PagesModule} from './pages/pages.module';
-import { from } from 'rxjs';
-
+import {SharedModule} from './shared/shared.module'
+import {UserModule} from './pages/user/user.module'
+import {LayoutsModule} from './shared/layouts/layouts.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,9 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule,
-    PagesModule
+    SharedModule,
+    UserModule,
+    LayoutsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
